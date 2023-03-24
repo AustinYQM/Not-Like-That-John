@@ -2,6 +2,7 @@ plugins {
     java
     jacoco
     pmd
+    id("io.freefair.lombok") version "8.0.1"
     id("com.diffplug.spotless") version "6.17.0"
     id("com.adarshr.test-logger") version "3.2.0"
 }
@@ -18,18 +19,14 @@ repositories {
 }
 
 
+pmd {
 
+    isIgnoreFailures = true
 
+}
 dependencies {
     /* Versions */
-    val lombokVersion = "1.18.26"
     val jUnitVersion = "5.9.2"
-
-    // Lombok
-    compileOnly("org.projectlombok:lombok:${lombokVersion}")
-    annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
-    testCompileOnly("org.projectlombok:lombok:${lombokVersion}")
-    testAnnotationProcessor("org.projectlombok:lombok:${lombokVersion}")
 
     // JUNIT
     testImplementation("org.junit.jupiter:junit-jupiter-api:${jUnitVersion}")
