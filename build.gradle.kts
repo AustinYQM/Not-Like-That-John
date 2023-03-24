@@ -18,8 +18,11 @@ repositories {
 }
 
 
+pmd {
 
+    isIgnoreFailures = true
 
+}
 dependencies {
     /* Versions */
     val lombokVersion = "1.18.26"

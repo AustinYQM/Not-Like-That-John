@@ -3,14 +3,13 @@ package com.yqmonline.lessons.one;
 
 public class Animal {
   private int age;
-  private String name;
+  private final String name;
 
   public Animal(int age, String name) {
     this.age = age;
     this.name = name;
   }
 
-  private Animal() {}
 
   public int getAge() {
     return age;
