@@ -3,6 +3,7 @@ plugins {
     jacoco
     pmd
     id("com.diffplug.spotless") version "6.17.0"
+    id("com.github.nbaztec.coveralls-jacoco") version "1.2.15"
 }
 
 group = "com.yqmonline"
