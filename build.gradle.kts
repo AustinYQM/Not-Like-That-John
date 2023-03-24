@@ -3,6 +3,7 @@ plugins {
     jacoco
     pmd
     id("com.diffplug.spotless") version "6.17.0"
+    id("com.adarshr.test-logger") version "3.2.0"
 }
 
 group = "com.yqmonline"
@@ -15,6 +16,7 @@ java {
 repositories {
     mavenCentral()
 }
+
 
 
 
