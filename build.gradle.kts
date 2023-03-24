@@ -3,7 +3,6 @@ plugins {
     jacoco
     pmd
     id("com.diffplug.spotless") version "6.17.0"
-    id("com.github.nbaztec.coveralls-jacoco") version "1.2.15"
 }
 
 group = "com.yqmonline"
@@ -21,8 +20,8 @@ repositories {
 
 dependencies {
     /* Versions */
-    val lombokVersion: String = "1.18.26"
-    val jUnitVersion: String = "5.9.2"
+    val lombokVersion = "1.18.26"
+    val jUnitVersion = "5.9.2"
 
     // Lombok
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
