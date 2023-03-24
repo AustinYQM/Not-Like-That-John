@@ -24,6 +24,11 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      - name: Run PMD
+        uses: pmd/pmd-github-action@v1
+        with:
+          rulesets: "category/java/errorprone.xml"
+
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
 
